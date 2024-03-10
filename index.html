@@ -20,13 +20,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
     <!-- youtube.js -->
-    <script defer src="js/youtube.js"></script>
+    <!-- <script defer src="js/youtube.js"></script> -->
   
     <!-- main.js -->
     <script defer src="./js/main.js"></script>
   
   <!-- 웹 스타일 초기화 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+
+  <!-- 구글 웹폰트 연결 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- 구글 머트리얼 아이콘  -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
   
   <!-- 파비콘 설정 -->
   <link rel="icon" href="./subway_symbol_a.png">
@@ -34,22 +43,24 @@
 <body>
   <!-- HEADER -->
   <header>
+    <div class="top-line"></div>
     <div class="inner">
-      <a href="./index.html" class="logo">
-        <img src="./image/Subway_2016_logo.png" alt="SubWay">
+      <a href="./index.html">
+        <img src="./image/Subway_2016_logo.png" alt="SubWay" class="logo">
       </a>
       <div class="sign">
-        <a href="javascript:void(0)">로그인</a>
-        <a href="javascript:void(0)">회원가입</a>
+        <a href="javascript:void(0)" class="sign-in">로그인</a>
+        <a href="javascript:void(0)" class="sign-up">회원가입</a>
         
         <!-- 글로벌 아이콘 -->
-        <a href="javascript:void(0)">
-          <span class="material-icons">Language</span>
+        <a href="javascript:void(0)" class="global-icon">
+          <span class="material-icons-outlined">
+            language
+            </span>
         </a>
       </div>
-
-      
     </div>
+    <!-- 메인 메뉴 만들기 -->
   </header>
 </body>
 </html>
