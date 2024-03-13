@@ -70,16 +70,17 @@ img {
 }
 
 header {
-  background-color: #f6f5f0;
-  border-bottom: 1px solid #c8c8c8;
+  /* background-color: #f6f5f0; */
+  /* border-bottom: 1px solid #c8c8c8; */
   width: 100%; /* 가로 너비를 지정하지 않으면 최소한으로 줄어드려고 함*/
   /* position: fixed;  */
   top: 0; /* fixed는 기준 자리를 잡아줘야함*/ 
 }
 .main-menu {
-  height: 200px;
+  /* height: 200px; */
   /* background-color: #c8c8c8; */
   position: relative;
+  z-index: 1;
 }
 .main-menu .menu {
   display: flex;
@@ -108,9 +109,6 @@ header {
 }
 .main-menu .menu .menu-container .menu-contents {
   height: 300px;
-  left: 0;
-  background-color: white;
-  border-top: 1px solid #c8c8c8;
   display: none;
 }
 
@@ -120,8 +118,14 @@ header {
 
 .visual {
   
+  background-color: #f6f5ef;
+  display: flex;
+  justify-content: center; /* 슬라이드 수평 가운데 정렬 */
+  position: relative; /* 페이지네이션 요소 배치를 위해 */
+}
+.visual .swiper .swiper-wrapper .swiper-slide a{
+  max-width: 1900px;;
 }
 
 .visual .fade-in img{
-  width: 100%;
 }
