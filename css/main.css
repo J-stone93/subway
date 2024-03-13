@@ -17,7 +17,6 @@ body {
 
 a {
   text-decoration: none;
-  display: block;
 }
 
 img {
@@ -25,7 +24,7 @@ img {
 }
 
 .inner {
-  max-width: 1500px;
+  max-width: 1900px;
   margin: 0 auto;
   position: relative;
 }
@@ -34,8 +33,7 @@ img {
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
-  bottom: 0;
+  top: 50px;
   margin: auto;
 }
 .sign-menu {
@@ -43,19 +41,11 @@ img {
   position: relative;
   /* background-color: coral; */
 }
-.sign-menu .logo {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  max-width: 500px;
-  box-sizing: border-box;
-}
 .sign-menu .sign {
   display: flex;
   position: absolute;
   right: 0;
-  bottom: 50px; 
+  bottom: 80px; 
 }
 .sign-menu ul.sign li {
   position: relative;
@@ -78,29 +68,58 @@ img {
   height: 25px;
   padding: 0 15px;
 }
+
+header {
+  background-color: #f6f5f0;
+  border-bottom: 1px solid #c8c8c8;
+  width: 100%; /* 가로 너비를 지정하지 않으면 최소한으로 줄어드려고 함*/
+  /* position: fixed;  */
+  top: 0; /* fixed는 기준 자리를 잡아줘야함*/ 
+}
 .main-menu {
-  display: flex;
-  justify-content: center;
+  height: 200px;
+  /* background-color: #c8c8c8; */
+  position: relative;
 }
 .main-menu .menu {
   display: flex;
+  justify-content: center;
+  z-index: 1;
 }
-.main-menu .menu li:hover .menu-name {
-  color: 	#028940;
+.main-menu .menu .menu-container .menu-name {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+  margin: 20px 50px;
+}
+.main-menu .menu .menu-container .menu-name:hover{
+  color: #008938;
+}
+.main-menu .menu .menu-container .menu-contents {
+  text-align: center;
+}
+.main-menu .menu-contents li {
+  font-weight: 500;
+  padding: 6px 0;
+}
+.main-menu .menu-contents li:hover {
+  color: #008938;
+  text-decoration: underline;
+}
+.main-menu .menu .menu-container .menu-contents {
+  height: 300px;
+  left: 0;
+  background-color: white;
+  border-top: 1px solid #c8c8c8;
+  display: none;
 }
 
-.main-menu .menu li {
-  padding: 20px 30px;
+.main-menu .menu:hover .menu-contents {
+  display: block;
 }
-.main-menu .menu li a {
-  font-size: 30px;
-  font-weight: 700;
-  color: #333;
-}
+
 .visual {
-  /* position: absolute; */
-  width: 100%;
-  margin: 0 auto;
+  
 }
 
 .visual .fade-in img{
