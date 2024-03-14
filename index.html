@@ -22,7 +22,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
     <!-- youtube.js -->
-    <!-- <script defer src="js/youtube.js"></script> -->
+    <script defer src="js/youtube.js"></script>
   
     <!-- main.js -->
     <script defer src="./js/main.js"></script>
@@ -43,7 +43,6 @@
 <body>
   <!-- HEADER -->
   <header>
-    <div class="top-line"></div>
     <div class="inner">
       <a href="./index.html">
         <img src="./image/Subway_2016_logo.png" alt="SubWay" class="logo">
@@ -73,7 +72,7 @@
           <li class="menu-container">
             <a href="javascript:void(0)" class="menu-name">메뉴소개</a>
             <div class="menu-contents">
-              <ul class="inner">
+            <ul>
                 <li>샌드위치</li>
                 <li>랩ㆍ기타</li>
                 <li>샐러드</li>
@@ -86,7 +85,7 @@
           <li class="menu-container">
             <a href="javascript:void(0)" class="menu-name">이용방법</a>
             <div class="menu-contents">
-              <ul class="inner">
+              <ul>
                 <li>써브웨이 이용방법</li>
                 <li>단체메뉴 이용방법</li>
                 <li>신선한 재료 소개</li>
@@ -97,7 +96,7 @@
           <li class="menu-container">
             <a href="javascript:void(0)" class="menu-name">새소식</a>
             <div class="menu-contents" >
-              <ul class="inner">
+              <ul>
                 <li>이벤트ㆍ프로모션</li>
                 <li>뉴스ㆍ공지사항</li>
                 <li>광고영상</li>
@@ -107,7 +106,7 @@
           <li class="menu-container">
             <a href="javascript:void(0)" class="menu-name">써브웨이</a>
             <div class="menu-contents">
-              <ul class="inner">
+              <ul>
                 <li>써브웨이 역사</li>
                 <li>써브웨이 약속</li>
                 <li>샌드위치 아티스트 지원</li>
@@ -118,7 +117,7 @@
           <li class="menu-container">
             <a href="javascript:void(0)" class="menu-name">가맹점</a>
             <div class="menu-contents">
-              <ul class="inner">
+              <ul>
                 <li>써브웨이 프렌차이즈</li>
                 <li>가맹관련FAQ</li>
                 <li>가맹신천ㆍ문의</li>
@@ -130,7 +129,7 @@
           <li class="menu-container">
             <a href="javascript:void(0)" class="menu-name">온라인 주문</a>
             <div class="menu-contents">
-              <ul class="inner">
+              <ul>
                 <li>FAST-SUB</li>
                 <li>HAME-SUB</li>
                 <li>단체주문</li>
@@ -145,21 +144,43 @@
 
   <!-- VISUAL -->
   <section class="visual">
-    <div class="swiper">
+    <div class="swiper inner">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <a href="javascript:void(0)"><img src="./image/메인 슬라이드-1.jpg" alt=""></a>
         </div>
         <div class="swiper-slide">
-          <a href="javascript:void(0)"><img src="./image/메인 슬라이드-2.jpg.jpg" alt=""></a>
+          <a href="javascript:void(0)"><img src="./image/메인 슬라이드-2.jpg" alt=""></a>
         </div>
         <div class="swiper-slide">
-          <a href="javascript:void(0)"><img src="./image/메인 슬라이드-3.jpg.jpg" alt=""></a>
+          <a href="javascript:void(0)"><img src="./image/메인 슬라이드-3.jpg" alt=""></a>
         </div>
         <div class="swiper-slide">
-          <a href="javascript:void(0)"><img src="./image/메인 슬라이드-4.jpg.jpg" alt=""></a>
+          <a href="javascript:void(0)"><img src="./image/메인 슬라이드-4.jpg" alt=""></a>
         </div>
       </div>
+      <div class="quick-link">
+        <div class="link-item1">
+          <a href="javascript:void(0)">매장찾기</a>
+        </div>
+        <div class="link-item2">
+          <a href="javascript:void(0)">가맹신청ㆍ문의</a>
+        </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="youtube">
+    <div class="youtube-area">
+      <div id="player"></div>
+    </div>
+    <div class="youtube-cover"></div>
+  </section>
+
+  <section class="subway-menu">
+    <div class="head">
+      <h2>Subway's Menu</h2>
+      <div class="tab"></div>
     </div>
   </section>
 </body>

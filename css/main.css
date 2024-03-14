@@ -6,13 +6,6 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #333;
-  margin-top: 15px;
-}
-
-.top-line {
-  max-width: 100%;
-  height: 5px;
-  background-color: #008938;
 }
 
 a {
@@ -36,6 +29,8 @@ img {
   top: 50px;
   margin: auto;
 }
+
+/* 서브 메뉴 영역 */
 .sign-menu {
   height: 200px;
   position: relative;
@@ -44,7 +39,7 @@ img {
 .sign-menu .sign {
   display: flex;
   position: absolute;
-  right: 0;
+  right: 50px;
   bottom: 80px; 
 }
 .sign-menu ul.sign li {
@@ -62,34 +57,43 @@ img {
   margin: auto;
 }
 .sign-menu .sign a {
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 16px;
   color: #333;
   height: 25px;
   padding: 0 15px;
 }
 
+/* 메인 메뉴 영역 */
 header {
   /* background-color: #f6f5f0; */
   /* border-bottom: 1px solid #c8c8c8; */
   width: 100%; /* 가로 너비를 지정하지 않으면 최소한으로 줄어드려고 함*/
-  /* position: fixed;  */
-  top: 0; /* fixed는 기준 자리를 잡아줘야함*/ 
+  position: fixed; 
+  /* top: 0; fixed는 기준 자리를 잡아줘야함  */
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+
 }
 .main-menu {
   /* height: 200px; */
   /* background-color: #c8c8c8; */
   position: relative;
-  z-index: 1;
+  width: 100%;
 }
 .main-menu .menu {
   display: flex;
   justify-content: center;
-  z-index: 1;
+  padding-bottom: 30px;
+}
+.main-menu .menu .menu-container {
+  position: relative;
 }
 .main-menu .menu .menu-container .menu-name {
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   color: #333;
   margin: 20px 50px;
 }
@@ -98,6 +102,9 @@ header {
 }
 .main-menu .menu .menu-container .menu-contents {
   text-align: center;
+}
+.main-menu .menu-contents {
+  margin-top: 20px;
 }
 .main-menu .menu-contents li {
   font-weight: 500;
@@ -108,24 +115,104 @@ header {
   text-decoration: underline;
 }
 .main-menu .menu .menu-container .menu-contents {
-  height: 300px;
+  background-color: white;
   display: none;
 }
 
-.main-menu .menu:hover .menu-contents {
+.main-menu .menu-container:hover .menu-contents {
   display: block;
+  width: 100%;
+  transition: 1s;
+
 }
 
+/* 슬라이드 영역 */
 .visual {
-  
-  background-color: #f6f5ef;
+  /* background-color: #f6f5ef; */
+  margin-top: 257px;
   display: flex;
   justify-content: center; /* 슬라이드 수평 가운데 정렬 */
   position: relative; /* 페이지네이션 요소 배치를 위해 */
+  height: 500px;
 }
-.visual .swiper .swiper-wrapper .swiper-slide a{
-  max-width: 1900px;;
+.visual .swiper .swiper-wrapper .swiper-slide a {
+  display: flex;
+  justify-content: center;
 }
 
-.visual .fade-in img{
+.visual .quick-link {
+  display: flex;
+  width:500px;
+  height: 80px;
+  /* background-color: orange; */
+  position: absolute;
+  bottom: 0px;
+  right: 415px;
+  z-index: 1;
+  text-align: center;
+  line-height: 80px;
+}
+.visual .quick-link .link-item1 {
+  width: 50%;
+  background-color: #FFC20D;
+  border-radius: 20px 0 0 0;
+  
+}
+.visual .quick-link .link-item2 {
+  width: 50%;
+  background-color: #008938;
+  border-radius: 0 0 20px 0;
+}
+.visual .quick-link .link-item1 a {
+  color: #333;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 20px;
+}
+.visual .quick-link .link-item2 a {
+  color: #f6f5ef;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 20px;
+}
+
+/* 유튜브 영역 */
+.youtube {
+  margin-top: 100px;
+  position: relative; /* 부모에 위치 기준 */
+  height: 540px;
+  background-color: #FFC20D;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.youtube .youtube-area {
+  width: 1920px;
+  height: 1080px;
+  display: flex;
+  justify-content: center;
+}
+#player {
+  /* 부모 영역에 가득 차도록 지정 */
+  width: 60%;
+  height: 60%;
+}
+.youtube .youtube-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url("../images/video_cover_pattern.png");
+}
+
+/* 서브웨이 샌드위치 영역 */
+.subway-menu {
+  width: 1170px;
+  height: 300px;
+  margin: 0 auto;
+  padding-bottom: 33px;
 }
