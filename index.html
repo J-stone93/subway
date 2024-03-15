@@ -8,9 +8,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
 
     <!-- SWIPER CSS -->
-    <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     
+    <!-- 구글 웹폰트 연결 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  
+    <!-- 구글 머트리얼 아이콘  -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    
+    <!-- 파비콘 설정 -->
+    <link rel="icon" href="./subway_symbol_a.png">
+
     <!-- main.css -->
     <link rel="stylesheet" href="./css/main.css">
   
@@ -28,17 +39,6 @@
     <script defer src="./js/main.js"></script>
   
 
-  <!-- 구글 웹폰트 연결 -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
-
-  <!-- 구글 머트리얼 아이콘  -->
-  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
-  
-  <!-- 파비콘 설정 -->
-  <link rel="icon" href="./subway_symbol_a.png">
 </head>
 <body>
   <!-- HEADER -->
@@ -66,76 +66,72 @@
         </ul>
       </div>
       
-      <!-- 메인 메뉴 만들기 -->
-      <nav class="main-menu">
-        <ul class="menu">
-          <li class="menu-container">
-            <a href="javascript:void(0)" class="menu-name">메뉴소개</a>
-            <div class="menu-contents">
-            <ul>
-                <li>샌드위치</li>
-                <li>랩ㆍ기타</li>
-                <li>샐러드</li>
-                <li>아침메뉴</li>
-                <li>스마일</li>
-                <li>단체메뉴</li>
-              </ul>
-            </div>
+    </div>
+    <div class="full_cover">
+      <nav class="menu_nav">
+        <div class="nav_bg"></div>
+        <ul class="first_depth">
+          <li class="first_depth_under">
+            <a href="#none">메뉴소개</a>
+            <ul class="second_depth">
+              <li class="second_depth_under">샌드위치</li>
+              <li class="second_depth_under">랩ㆍ기타</li>
+              <li class="second_depth_under">샐러드</li>
+              <li class="second_depth_under">아침메뉴</li>
+              <li class="second_depth_under">스마일</li>
+              <li class="second_depth_under">단체메뉴</li>
+            </ul>
           </li>
-          <li class="menu-container">
-            <a href="javascript:void(0)" class="menu-name">이용방법</a>
-            <div class="menu-contents">
-              <ul>
-                <li>써브웨이 이용방법</li>
-                <li>단체메뉴 이용방법</li>
-                <li>신선한 재료 소개</li>
-                <li>App 이용방법</li>
-              </ul>
-            </div>
+    
+          <li class="first_depth_under">
+            <a href="#none">이용방법</a>
+            <ul class="second_depth">
+              <li class="second_depth_under">써브웨이 이용방법</li>
+              <li class="second_depth_under">단체메뉴 이용방법</li>
+              <li class="second_depth_under">신선한 재료 소개</li>
+              <li class="second_depth_under">App 이용방법</li>
+            </ul>
           </li>
-          <li class="menu-container">
-            <a href="javascript:void(0)" class="menu-name">새소식</a>
-            <div class="menu-contents" >
-              <ul>
-                <li>이벤트ㆍ프로모션</li>
-                <li>뉴스ㆍ공지사항</li>
-                <li>광고영상</li>
-              </ul>
-            </div>
+    
+          <li class="first_depth_under">
+            <a href="#none">새소식</a>
+            <ul class="second_depth">
+              <li class="second_depth_under">이벤트ㆍ프로모션</li>
+              <li class="second_depth_under">뉴스ㆍ공지사항</li>
+              <li class="second_depth_under">광고영상</li>
+            </ul>
           </li>
-          <li class="menu-container">
-            <a href="javascript:void(0)" class="menu-name">써브웨이</a>
-            <div class="menu-contents">
-              <ul>
-                <li>써브웨이 역사</li>
-                <li>써브웨이 약속</li>
-                <li>샌드위치 아티스트 지원</li>
-                <li>매장찾기</li>
-              </ul>
-            </div>
+    
+          <li class="first_depth_under">
+            <a href="#none">써브웨이</a>
+            <ul class="second_depth">
+              <li class="second_depth_under">써브웨이 역사</li>
+              <li class="second_depth_under">써브웨이 약속</li>
+              <li class="second_depth_under">샌드위치 아티스트 지원</li>
+              <li class="second_depth_under">매장찾기</li>
+            </ul>
           </li>
-          <li class="menu-container">
-            <a href="javascript:void(0)" class="menu-name">가맹점</a>
-            <div class="menu-contents">
-              <ul>
-                <li>써브웨이 프렌차이즈</li>
-                <li>가맹관련FAQ</li>
-                <li>가맹신천ㆍ문의</li>
-                <li>지사안내</li>
-                <li>사업설명회</li>
-              </ul>
-            </div>
+    
+          <li class="first_depth_under">
+            <a href="#none">가맹점</a>
+            <ul class="second_depth">
+              <li class="second_depth_under">써브웨이 프렌차이즈</li>
+              <li class="second_depth_under">가맹관련FAQ</li>
+              <li class="second_depth_under">가맹신청ㆍ문의</li>
+              <li class="second_depth_under">지사안내</li>
+              <li class="second_depth_under">사업설명회</li>
+            </ul>
           </li>
-          <li class="menu-container">
-            <a href="javascript:void(0)" class="menu-name">온라인 주문</a>
-            <div class="menu-contents">
-              <ul>
-                <li>FAST-SUB</li>
-                <li>HAME-SUB</li>
-                <li>단체주문</li>
-              </ul>
-            </div>
+    
+          <li class="first_depth_under">
+            <a href="#none">온라인 주문</a>
+            <ul class="second_depth">
+              <li class="second_depth_under">FAST-SUB</li>
+              <li class="second_depth_under">HAME-SUB</li>
+              <li class="second_depth_under">단체주문</li>
+            </ul>
           </li>
+    
         </ul>
       </nav>
     </div>
@@ -144,7 +140,7 @@
 
   <!-- VISUAL -->
   <section class="visual">
-    <div class="swiper inner">
+    <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <a href="javascript:void(0)"><img src="./image/메인 슬라이드-1.jpg" alt=""></a>
@@ -171,27 +167,29 @@
   </section>
 
   <!-- YOUTUBE -->
-  <section class="youtube">
-    <div class="youtube-area">
-      <div id="player"></div>
+  <section class="youtube-fullcover">
+    <div class="youtube">
+      <div class="youtube-area">
+        <div id="player"></div>
+      </div>
+      <div class="youtube-cover"></div>
     </div>
-    <div class="youtube-cover"></div>
   </section>
 
   <!-- subway menu -->
   <section class="subway-menu">
-    <div class="head">
+    <div class="head inner">
       <h2>Subway's Menu</h2>
       <div class="tab">
         <ul>
-          <li><a href="javascript:void(0)">클래식</a></li>
-          <li><a href="javascript:void(0)">프레쉬&라이트</a></li>
+          <li><a href="javascript:void(0)" class="clasic">클래식</a></li>
+          <li><a href="javascript:void(0)" class="flesh">프레쉬&라이트</a></li>
           <li><a href="javascript:void(0)">프리미엄</a></li>
           <li><a href="javascript:void(0)">아침메뉴</a></li>
         </ul>
       </div>
     </div>
-    <div class="menu-img inner">
+    <div class="menu-img">
       <div class="menu-clasic">
         <div class="wrap">
           <img src="./image/sandwich_cl06_01.jpg" alt="">
@@ -213,13 +211,40 @@
         <div class="wrap">
           <img src="./image/sandwich_cl04_01.jpg" alt="">
           <strong class="clasic-name">햄</strong>
-          <p>풍부한 햄이 만들어내는 담백함을 입 안 가득 즐겨보세요!
-
-          </p>
+          <p>풍부한 햄이 만들어내는 담백함을 입 안 가득 즐겨보세요!</p>
         </div>
-        
+        <div class="wrap">
+          <img src="./image/sandwich_cl05_01.jpg" alt="">
+          <strong class="clasic-name">참치</strong>
+          <p>남녀노소 누구나 좋아하는 담백한 참치와 고소한 마요네즈의 완벽한 조화</p>
+        </div>
       </div>
     </div>
+  </div>
+  <div class="menu-img">
+    <div class="menu-flesh">
+      <div class="wrap">
+        <img src="./image/sandwich_fl01_01.jpg" alt="">
+        <strong class="clasic-name">로티세리 바베큐 치킨</strong>
+        <p>촉촉한 바비큐 치킨의 풍미가득. 손으로 찢어 더욱 부드러운 치킨의 혁명</p>
+      </div>
+      <div class="wrap">
+        <img src="./image/sandwich_fl02_01.jpg" alt="">
+        <strong class="clasic-name">로스트 치킨</strong>
+        <p>오븐에 구워 담백한 저칼로리 닭가슴살의 건강한 풍미</p>
+      </div>
+      <div class="wrap">
+        <img src="./image/sandwich_fl04_01.jpg" alt="">
+        <strong class="clasic-name">써브웨이 클럽</strong>
+        <p>고소한 베이컨, 담백한 치킨 슬라이스에 햄까지 더해 완벽해진 조화를 즐겨보세요!</p>
+      </div>
+      <div class="wrap">
+        <img src="./image/sandwich_fl05_01.jpg" alt="">
+        <strong class="clasic-name">치킨 슬라이스</strong>
+        <p>닭가슴살로 만든 치킨 슬라이스로 즐기는 담백한 맛!</p>
+      </div>
+    </div>
+  </div>
   </section>
 </body>
 </html>
