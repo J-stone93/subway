@@ -131,3 +131,15 @@ gsap.to('.float2', 2, {
 // const morningEl = document.querySelector('.morning');
 // const menuMorningEl = document.querySelector('.menu-morning');
 
+const menuNameEls = document.querySelectorAll('.menu-name li')
+const menuContainerEls = document.querySelectorAll('.menu-container .menu-img')
+
+menuNameEls.forEach((menuNameEl,index) => {
+  menuContainerEls[index].style.display = 'flex';
+  menuNameEls[index].addEventListener('click', () => {
+    menuContainerEls.forEach((menuContainerEl) => {
+      menuContainerEl.style.display = 'none';
+      menuContainerEls[index].style.display = 'flex';
+    })
+  })
+}); 
