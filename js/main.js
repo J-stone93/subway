@@ -32,12 +32,13 @@ gsap.to('.float2', 2, {
   ease: Power1.easeInOut
 });
 
-
+// 샌드위치 
 
 const menuNameEls = document.querySelectorAll('.menu-name li')
-const menuContainerEls = document.querySelectorAll('.menu-container .menu-img')
+const menuContainerEls = document.querySelectorAll('.menu-container .menu-wrap')
 
 menuNameEls.forEach((menuNameEl,index) => {
+  menuContainerEls[index].style.display = 'none';
   menuContainerEls[0].style.display = 'flex';
   menuNameEls[index].addEventListener('click', () => {
     menuContainerEls.forEach((menuContainerEl) => {
@@ -46,3 +47,21 @@ menuNameEls.forEach((menuNameEl,index) => {
     })
   })
 }); 
+
+
+// 이벤트 슬라이드
+
+var swiper = new Swiper(".swiper-event", {
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  slidesPerView: 1,
+  spaceBetween: 100,
+  loopAdditionalSlides : 1,
+  loop : true,
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
+});
