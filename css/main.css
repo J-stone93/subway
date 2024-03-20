@@ -359,6 +359,11 @@ body .quick-link .link-item2 a {
 .subway-menu .menu-img .wrap img{
   width: 365px;
   margin: 0 auto;
+  transition: 0.5s;
+  padding: 0 1px 8px;
+}
+.subway-menu .menu-img .wrap img:hover{
+  transform: scale(1.05);
 }
 
 
@@ -461,6 +466,11 @@ body .quick-link .link-item2 a {
 .sub_news .new_bottum .new__container .new__content2 .new__wrap img {
   border-radius: 10px;
   margin: 0 auto 10px;
+  transition: 0.5s;
+  box-shadow: 10px 10px 10px #292929;
+}
+.sub_news .new_bottum .new__container .new__content2 .new__wrap img:hover {
+  transform: rotate(5deg) scale(1.05);
 }
 .sub_news .new_bottum .new__container .new__content2 .new__wrap a {
   font-size: 18px;
@@ -533,8 +543,8 @@ body .quick-link .link-item2 a {
   display: flex;
   flex-direction: column;
 }
-.swiper-event .swiper-slide a img {
-  width: 100%;
+.swiper-event .swiper-slide img {
+  border-radius: 5px;
 }
 .swiper-event .swiper-slide .btn {
   font-size: 20px;

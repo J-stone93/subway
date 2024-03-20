@@ -11,7 +11,7 @@ new Swiper('.visual .swiper', {
 // 유튜브 섹션 위에 애니메이션
 gsap.to('.float1', 1.5, {
   delay: 1, // 얼마나 늦게 애니메이션을 시작할 것인지 지연 시간을 설정
-  y: 15, // 수직으로 얼마나 움직일지 설정, transform: translateY(수치); 와 같음
+  x: 15, // 수직으로 얼마나 움직일지 설정, transform: translateY(수치); 와 같음
   repeat: -1, // 몇 번 반복할지 설정, -1은 무한 반복
   yoyo: true, // 한 번 재생된 애니메이션을 다시 뒤로 재생
   ease: Power1.easeInOut // 타이밍 함수 적용, 느리게-빠르게-느리게
