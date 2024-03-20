@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- 웹 스타일 초기화 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+
+  <!-- 구글 웹폰트 연결 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  
+  <!-- 구글 머트리얼 아이콘  -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+
+  <!-- sign_in.css -->
+  <link rel="stylesheet" href="./css/sign_in.css">
+
+</head>
+<body>
+  <!-- bdagee -->
+  <div class="quick-link">
+    <div class="link-item1">
+      <a href="javascript:void(0)">매장찾기</a>
+    </div>
+    <div class="link-item2">
+      <a href="javascript:void(0)">가맹신청ㆍ문의</a>
+    </div>
+  </div>
+  <!-- HEADER -->
+  <header>
+    <div class="inner">
+      <a href="./index.html">
+        <img src="./image/Subway_2016_logo.png" alt="SubWay" class="logo">
+      </a>
+      <div class="sign-menu">
+        <ul class="sign">
+          <li>
+            <a href="./sign_in.html" class="sign-in">로그인</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="sign-up">회원가입</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="global-icon">
+              <span class="material-icons-outlined">
+                language
+                </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 메인 -->
+    <div class="full_cover">
+      <nav class="menu_nav">
+        <div class="nav_bg"></div>
+        <ul class="first_depth">
+          <li class="first_depth_under">
+            <a href="#none">메뉴소개</a>
+            <ul class="second_depth">
+              <li class="second_depth_under">샌드위치</li>
+              <li class="second_depth_under">랩ㆍ기타</li>
+              <li class="second_depth_under">샐러드</li>
+              <li class="second_depth_under">아침메뉴</li>
+              <li class="second_depth_under">스마일</li>
+              <li class="second_depth_under">단체메뉴</li>
+            </ul>
+          </li>
+    
+          <li class="first_depth_under">
+            <a href="#none">이용방법</a>
+            <ul class="second_depth">
+              <li class="second_depth_under">써브웨이 이용방법</li>
+              <li class="second_depth_under">단체메뉴 이용방법</li>
+              <li class="second_depth_under">신선한 재료 소개</li>
+              <li class="second_depth_under">App 이용방법</li>
+            </ul>
+          </li>
+          
+          <li class="first_depth_under">
+            <a href="#none">새소식</a>
+            <ul class="second_depth">
+              <li class="second_depth_under">이벤트ㆍ프로모션</li>
+              <li class="second_depth_under">뉴스ㆍ공지사항</li>
+              <li class="second_depth_under">광고영상</li>
+            </ul>
+          </li>
+          
+          <li class="first_depth_under">
+            <a href="#none">써브웨이</a>
+            <ul class="second_depth">
+              <li class="second_depth_under">써브웨이 역사</li>
+              <li class="second_depth_under">써브웨이 약속</li>
+              <li class="second_depth_under">샌드위치 아티스트 지원</li>
+              <li class="second_depth_under">매장찾기</li>
+            </ul>
+          </li>
+    
+          <li class="first_depth_under">
+            <a href="#none">가맹점</a>
+            <ul class="second_depth">
+              <li class="second_depth_under">써브웨이 프렌차이즈</li>
+              <li class="second_depth_under">가맹관련FAQ</li>
+              <li class="second_depth_under">가맹신청ㆍ문의</li>
+              <li class="second_depth_under">지사안내</li>
+              <li class="second_depth_under">사업설명회</li>
+            </ul>
+          </li>
+          
+          <li class="first_depth_under">
+            <a href="#none">온라인 주문</a>
+            <ul class="second_depth">
+              <li class="second_depth_under">FAST-SUB</li>
+              <li class="second_depth_under">HAME-SUB</li>
+              <li class="second_depth_under">단체주문</li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <a href="javascript:void(0)" class="btn-hamburger">
+          <span class="material-icons">menu</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- sign-in -->
+  <section class="sign_page">
+    <div class="sign_group">
+      <div class="login_wrap">
+        <h1>LOGIN</h1>
+        <p>써브웨이 회원으로 로그인하시면 제공하는<br>
+          다양한 서비스를 이용할 수 있습니다.</p>
+      </div>
+      <div class="id_pw_group">
+        <div class="id_pw_wrap">
+          <div class="id_wrap">
+            <span>아이디</span>
+            <input type="text">
+          </div>
+          <div class="pw_wrap">
+            <span>비밀번호</span>
+            <input type="password">
+          </div>
+        </div>
+        <div class="id_radio">
+          <label for="id">
+            <input type="radio" id="id"> 아이디 저장
+          </label>
+        </div>
+      </div>  
+      <div class="signin_box">
+        <div class="signin_btn">
+          <a href="javascript:void(0)">로그인</a>
+        </div>
+      </div>
+      <div class="sign_link">
+        <ul>
+          <li><a href="javascript:void(0)">아이디 찾기</a></li>
+          <li><a href="javascript:void(0)">비밀번호 찾기</a></li>
+          <li><a href="javascript:void(0)">회원가입</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer_wrap">
+      <ul class="footer_top">
+        <li><a href="javascript:void(0)">이용약관</a></li>
+        <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+        <li><a href="javascript:void(0)">써브카드</a></li>
+        <li><a href="javascript:void(0)">점주관리자</a></li>
+      </ul>
+      <div class="footer_bottum">
+        <div class="info">
+          <p>서울시 서초구 강남대로 535 프린스빌딩 15층 대표 : INSOO CHO(인수조) 전화 : 02-797-5036 사업자등록번호 : 101-84-04143</p>
+        </div>
+        <div class="copy">
+          <p>SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
